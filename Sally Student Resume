@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>React Hello World</title>
+</head>
+
+<body>
+  <div id="application-root"></div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+
+  <script type="text/babel">
+
+function App(props) {
+  return (
+    <main>
+      {props.children}
+    </main>
+  );
+}
+
+
+ReactDOM.render(
+  <App className='my-class'>
+  
+
+    
+      <header>
+      <h1>Sally Student</h1>
+      </header>
+
+<address>
+
+<ul>(888)888-8888</ul>
+
+<ul><a href="mailto:sally@student.com">Email</a></ul>
+
+<img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student"/>
+
+
+  </address>
+     
+<main>
+<section>
+<h3>Eduction</h3>
+<p>Stanford Univeristy 2018 - BS in Computer Science</p>
+ </section>
+
+<section>
+<h3>Employment History</h3>
+<p><strong>Spotify - Web Developer</strong></p>
+<p>Jan. 2015 - Dec. 2016</p>
+<p><strong>Responsibilities:</strong></p>
+<p> Jack Ketch mizzenmast topmast sheet lee lookout bilge water clap of thunder topsail interloper. Avast hands bilged on her anchor Sink me marooned dead men tell no tales scourge of the seven seas schooner driver broadside. Hands scuttle swing the lead dance the hempen jig keelhaul me crack Jennys tea cup pinnace gangway fire in the hole.</p>
+
+<p><strong>Pandora - Junior Web Developer</strong></p>
+<p>Jan 2013. 2015 - Dec. 2014</p>
+<p><strong>Responsibilities:</strong></p>
+<p>Black spot hearties ye landlubber or just lubber coxswain Letter of Marque boatswain provost squiffy topmast. Bucko Gold Road Pirate Round heave to overhaul Blimey hardtack lateen sail brigantine Nelsons folly. Bilge overhaul gabion Admiral of the Black smartly Corsair schooner rigging haul wind Pirate Round.</p>
+</section>
+</main>
+
+
+  </App>,
+  document.querySelector('#application-root')
+);
+    
+</script>
+</body>
+
+</html>
